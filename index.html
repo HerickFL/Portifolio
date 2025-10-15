@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herick | Portfólio</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div data-role="page" id="portfolio-page" data-theme="a">
+
+        <div data-role="panel" id="menuPanel" data-display="overlay" data-position="left">
+            <h2>Herick</h2>
+            <ul data-role="listview">
+                <li><a href="#inicio" data-rel="close">Início</a></li>
+                <li><a href="#sobre" data-rel="close">Sobre Mim</a></li>
+                <li><a href="#habilidades" data-rel="close">Habilidades</a></li>
+                <li><a href="#projetos" data-rel="close">Meus Projetos</a></li>
+                <li><a href="#sites-desenvolvidos" data-rel="close">Sites Desenvolvidos</a></li> 
+                <li><a href="#contato" data-rel="close">Contato</a></li>
+            </ul>
+        </div>
+
+        <header data-role="header" data-position="fixed" data-tap-toggle="false">
+            <h1>Herick</h1>
+            <a href="#menuPanel" class="ui-btn ui-btn-left ui-corner-all ui-icon-bars ui-btn-icon-left menu">Menu</a>
+        </header>
+
+        <main role="main" class="ui-content">
+
+            <section id="inicio" class="hero">
+                <div class="hero-content fade-in-section">
+                    <img src="images/Minhacara.png" alt="Sua Foto de Perfil" class="profile-pic">
+                    <h2>Olá, eu sou Herick.</h2>
+                    <p>Desenvolvedor Web | UI/UX Designer | Apaixonado por Tecnologia</p>
+                    <a href="#projetos" class="ui-btn ui-btn-inline ui-corner-all custom-btn">Ver Meus Projetos</a>
+                </div>
+            </section>
+
+            <section id="sobre" class="content-section fade-in-section">
+                <h2>Sobre Mim</h2>
+                <p class="about-text">
+                    Sou um entusiasta da tecnologia com experiência em desenvolvimento web, com foco em criar interfaces de usuário intuitivas e experiências digitais agradáveis. Minha jornada no mundo da programação me permitiu explorar diversas ferramentas e linguagens, sempre buscando soluções criativas e eficientes.
+                </p>
+            </section>
+
+            <section id="habilidades" class="content-section fade-in-section">
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>HTML5, CSS3, JavaScript, jQuery, React.js, Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design UI/UX</h3>
+                        <p>Figma, Adobe XD, Prototipagem, Testes de Usabilidade</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <h3>Banco de Dados</h3>
+                        <p>SQL, MongoDB</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Controle de Versão</h3>
+                        <p>Git, GitHub</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos" class="content-section fade-in-section">
+                <h2>Meus Projetos</h2>
+                <div class="ui-grid-b ui-responsive project-grid"> 
+                    
+                    <div class="ui-block-a">
+                        <div class="project-card">
+                            <img src="images/CérebrodaQuebrada.png" alt="Imagem do Projeto 1">
+                            <h3>Desafio Liga Jovem</h3>
+                            <p>Liga Jovem, especificamente o "Desafio Liga Jovem" do Sebrae, é uma competição nacional gratuita de empreendedorismo e tecnologia para estudantes do Ensino Fundamental (8º e 9º anos), Ensino Médio, Ensino Superior e Ensino Técnico, que buscam desenvolver soluções criativas e com impacto para problemas de suas escolas ou comunidades, usando a tecnologia como ferramenta. As equipes, orientadas por um professor, elaboram projetos inovadores, e os vencedores podem ganhar uma viagem internacional.</p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="ui-block-b"> 
+                        <div class="project-card">
+                            <div class="video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/FFmaetRsXiU" title="Desafio Liga Jovem" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <h3>Desafio Liga Jovem</h3>
+                            <p></p>
+                            <a href="https://youtu.be/FFmaetRsXiU" target="_blank" class="ui-btn ui-corner-all custom-btn">Ver no Youtube</a>
+                        </div>
+                    </div>
+                    
+                    <div class="ui-block-c">
+                        <div class="project-card">
+                            <img src="images/Projetos.png" alt="Imagem do Projeto 3">
+                            <h3>Circuito 3Is da TransformAÇÃO</h3>
+                            <p>O Circuito 3Is da TransformAÇÃO, promovido pela escola de Vitória, tem o objetivo estimular a participação ativa das turmas e instrutores na reflexão e no desenvolvimento de atividades relacionadas aos temas da inovação, inclusão & Diversidade e Inserção Produtiva, promovendo integração e engajamento no ambiente escolar.</p>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </section>
+
+            <section id="sites-desenvolvidos" class="content-section fade-in-section">
+                <h2>Sites Desenvolvidos</h2>
+                <div class="ui-grid-b ui-responsive project-grid"> 
+                    
+                    <div class="ui-block-a">
+                        <div class="project-card">
+                            <img src="images/Captura de tela 2025-10-14 082022.png" alt="Imagem do Site 1">
+                            <h3>Limpidex Refrigeração</h3>
+                            <p>Criação de um site para uma empresa de refrigeração.</p>
+                            <a href="https://herickfl.github.io/Limpidex-Refrigera-o/" target="_blank" class="ui-btn ui-corner-all custom-btn">Visitar Site</a>
+                        </div>
+                    </div>
+                    
+                    <div class="ui-block-b">
+                        <div class="project-card">
+                            <img src="images/PizzaNostra.png" alt="Imagem do Site 2">
+                            <h3>Pizza Nostra</h3>
+                            <p>Projeto desenvolvido dentro da instituição Senac Vitória.</p>
+                            <a href="https://herickfl.github.io/PizzaNostra/" target="_blank" class="ui-btn ui-corner-all custom-btn">Visitar Site</a>
+                        </div>
+                    </div>
+                    
+                    <div class="ui-block-c">
+                        <div class="project-card">
+                            <img src="images/SiteParis.png" alt="Imagem do Site 3">
+                            <h3>Site Paris</h3>
+                            <p>Projeto desenvolvido dentro da instituição Senac Vitória.</p>
+                            <a href="https://herickfl.github.io/SiteParis/" target="_blank" class="ui-btn ui-corner-all custom-btn">Visitar Site</a>
+                        </div>
+                    </div>
+
+                </div> 
+            </section>
+
+            <section id="contato" class="content-section fade-in-section">
+                <h2>Entre em Contato</h2>
+                <p>Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para me contatar! Tel: 
+                    <b>(27) 99528-8886</b></p>
+                <div class="contact-buttons">
+                    <a href="mailto:herickoliveiras19@gmail.com" class="ui-btn ui-corner-all custom-btn"><i class="fas fa-envelope"></i> Enviar E-mail</a>
+                    
+                </div>
+                <p id="form-response" class="contact-form-response"></p>
+            </section>
+        </main>
+
+        <footer data-role="footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/herick-de-oliveira-ferreira-4b02b5312/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/HerickFL" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/herick.ferreira_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Herick. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
